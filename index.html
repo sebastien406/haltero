@@ -142,6 +142,7 @@
     </div>
   </section>
   <section>
+    <hr>
     <h2>Les derniers articles</h2>
     <div class="article">
       <picture>
@@ -175,6 +176,7 @@
     </div>
   </section>
   <section>
+    <hr>
     <h2>Partager cet article</h2>
     <ul>
       <li><a href="https://www.facebook.com/">Facebook</a></li>
@@ -183,13 +185,36 @@
     </ul>
   </section>
   <section>
+    <hr>
     <h2>Commentaires</h2>
 
-    <p style="color: red">
+    <p>
       Aucun commentaire n’a été publié pour le moment !
     </p>
     <h2>Ajouter un commentaire</h2>
-    <p>Votre pseudonyme :</p>
+    <form action="commentaires" method="post">
+      <div>
+        <label for="name">Votre pseudonyme :</label>
+        <br>
+        <input type="text" id="name :" name="pseudonyme" />
+        <br>
+        <label for="mail">Votre adresse e-mail :</label>
+        <br>
+        <input type="email" id="mail" name="Votre adresse e-mail :" />
+        <br>
+        <label for="msg">Votre commentaire :</label>
+        <br>
+        <textarea id="msg" name="user_message"></textarea>
+        <div>
+          <input type="checkbox" id="horns" name="commentaires" />
+          <label for="commentaires">En ajoutant un commentaire, je reconnais avoir pris connaissance
+            de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données
+            personnelles.</label>
+          <br>
+          <button class="commentaire" type="button">Ajouter mon commentaire</button>
+        </div>
+      </div>
+    </form>
   </section>
 </body>
 
