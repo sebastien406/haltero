@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="index.html">Accueil</a>
+                        <a href="index.html" title="">Accueil</a>
                     </li>
                     <li>
                         <a href="" title="Bien s'équiper">Bien s'équiper</a>
@@ -48,38 +48,37 @@
             <form action="" method="post" enctype="multipart/form-data">
                 <div class="">
                     <label for="name">Votre nom et prénom:</label> <br>
-                    <input type="text" name=" Voter nom et prénom" required>
+                    <input type="text" name=" Voter nom et prénom" style="width: 900px; height: 50px;" required>
                 </div>
                 <div class="">
                     <label for="name">Votre numéro de téléphone:</label> <br>
-                    <input type="text" name=" Votre numéro de téléphone" required>
+                    <input type="text" name=" Votre numéro de téléphone" style="width: 900px; height: 50px;"  required>
                 </div>
                 <div class="">
                     <label for="name">Votre adresse e-mail:</label> <br>
-                    <input type="text" name=" Votre adresse e-mail " required>
+                    <input type="text" name=" Votre adresse e-mail " style="width: 900px; height: 50px;" required>
                 </div>
                 <div class="">
                     <label for="name"> Votre message:</label> <br>
-                    <textarea name="Votre message" id="message" rows="5" cols="30"></textarea>
+                    <textarea name="Votre message" id="message" rows="5" cols="30"style="width: 900px; height: 200px;"  ></textarea>
                 </div>
                 <div class="">
-                    <input type="hidden" value="civilité">
+                    <input type="hidden" value="50" name="id-article">
                 </div>
                 <div class="">
-                    <input type="checkbox">
-                    <label for="name"> En validant ce formulaire, je reconnais avoir pris connaissance de la <a href="">
+                    <label for="rgpd">
+                        <input type="checkbox" id="rgpd">
+                        En validant ce formulaire, je reconnais avoir pris connaissance de la <a href="">
                             Politique de confidentialité</a> et des droits dont je dispose sur mes donéées
                         personnelles.
                     </label>
                 </div>
                 <div class="">
-                    <button type="submit"> Envoyer un message</button>
+                    <button type="submit" name="submit" style="width: 200px; height: 50px;" >Envoyer un message</button>
                 </div>
             </form>
         </div>
-
     </section>
-    <section></section>
 </body>
 
 </html>
