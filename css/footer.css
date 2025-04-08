@@ -49,12 +49,12 @@
   margin: 0 20px;
   text-decoration: none;
   height: 60px;
-  color: #000000; /* noir */
-  text-decoration: none; /* enlève le soulignement */
-  display: block; /* prend toute la largeur dispo */
+  color: #000000;
+  text-decoration: none;
+  display: block;
   padding-top: 10px;
 }
 
 .article-text a:hover {
-  color: #000000; /* reste noir au survol, ou change si tu veux un effet */
+  color: #000000;
 }
