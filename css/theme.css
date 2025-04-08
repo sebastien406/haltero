@@ -1,4 +1,5 @@
 @import url("reset.css");
 @import url("settings/config.variables.css");
-
+@import url("buttons.css");
+@import url("popup.css");
 @import url("header.css");

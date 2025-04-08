@@ -2,3 +2,36 @@
 :root {
   --color-primary: rgb(255, 255, 255);
 }
+
+/* button */
+:root{
+  --colors-button-transparent:#f0f0f0;
+  --color-lightgrey: #dadada;
+}
+  
+
+/* Borders */
+:root {
+    --border-radius-large: 10px;
+}
+  
+/* spacings */
+:root {
+    --padding-xs: 10px;
+    --padding-sm: 20px;
+    --padding-md: 30px;
+    --padding-lg: 40px;
+    --padding-xl: 50px;
+    --padding-xxl: 60px;
+    --padding-wide: 100px;
+}
+
+/* Borders */
+:root {
+  --border-color: var(--color-lightgrey);
+}
+
+/* Goutières */
+:root {
+  --gutter-gap-desktop: 30px;
+}
