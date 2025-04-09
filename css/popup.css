@@ -1,4 +1,3 @@
-
 body.has-overlay:before {
     content: '';
     display: block;
@@ -14,7 +13,7 @@ body.has-overlay:before {
 
 body.has-share-open {
     max-height: 100vh;
-    overflow: hidden;
+    overflow: hidden; /* empeche le scroll */
     width: 100%;
 }
 
@@ -49,7 +48,8 @@ body.has-share-open .box-wrapper {
     bottom: 0;
 }
 
-body.has-share-open .box {
+.box {
+    display: none;
     background-color: rgb(255, 255, 255);
     border-radius: var(--border-radius-large);
     position: absolute;
@@ -61,6 +61,10 @@ body.has-share-open .box {
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
     max-width: 800px;
+}
+
+body.has-share-open .box {
+    display: block;
 }
 
 
