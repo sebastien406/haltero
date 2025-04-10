@@ -3,11 +3,31 @@
 @import url("buttons.css");
 @import url("popup.css");
 @import url("header.css");
-@import url("footer.css");
-
+@import url("footer1.css");
+@import url("footer2.css");
+@import url("pagecontact.css");
+@import url("settings/config.z-indexes.css");
+@import url("layer.css");
+@import url("navigation.css");
 
 .container {
-    padding: 0 20px;
-    margin: 0 auto;
-    max-width: 800px;
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.container-lg {
+  max-width: 90%;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 4px #c0c0c0;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .container-lg {
+    max-width: 90%;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }

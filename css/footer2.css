@@ -1,0 +1,20 @@
+#footer2 {
+  padding: 100px 30px;
+  background-color: var(--color-background-header);
+}
+
+#TitleContact {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-bottom: 40px;
+  padding-left: 650px;
+}
+
+.infos-map {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}

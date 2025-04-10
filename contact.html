@@ -6,80 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link rel="shortcut icon" href="images/logonopaonnogain.png" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+    <script src="js/app.js"></script>
 </head>
 
 <body>
     <section>
-        <header>
+        <header id="header">
             <div class="logo">
-                <img src="images/Logo.svg" alt="image d'une haltère avec un titre no pain no gain" />
+                <img src="images/LogoCouleurs.png" alt="image d'une haltère avec un titre no pain no gain" />
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" title="">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="" title="Bien s'équiper">Bien s'équiper</a>
-                    </li>
-                    <li>
-                        <a href="" title="Haltérophilie">Haltérophilie</a>
-                    </li>
-                    <li>
-                        <a href="" title="Cross-training">cross-training</a>
-                    </li>
-                    <li>
-                        <a href="" title="Contact">Contact</a>
-                    </li>
-                </ul>
+            <button class="openMainNav">☰</button>
+
+            <nav class="main-nav" role="navigation">
+                <div class="main-nav__wrapper">
+                    <div class="main-nav_header">
+                        <button class="closeMainNav">Fermer</button>
+                        <ul>
+                            <li><a href="#" title="Accueil">Accueil</a></li>
+                            <li><a href="#" title="Bien s'équiper">Bien s'équiper</a></li>
+                            <li><a href="#" title="Haltérophilie">Haltérophilie</a></li>
+                            <li><a href="#" title="Cross-training">Cross-training</a></li>
+                            <li><a href="contact.html" class="selected">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
+            <div class="layer"></div>
         </header>
-        <div>
-            <ul>
-                <li><a href="">Accueil</a></li>
-                <li><a href="">Nous contacter</a></li>
-            </ul>
+        <div class="Ariane">
+            <p><a href="index.html">Accueil</a> > Contact</p>
         </div>
-        <div class="">
-            <h1>Nous contacter</h1>
-            <p>Pour contacter notre équipe, merci de compléter le formulaire suivant:</p>
-        </div>
-        <div class="">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="">
-                    <label for="name">Votre nom et prénom:</label> <br>
-                    <input type="text" name=" Voter nom et prénom" style="width: 900px; height: 50px;" required>
-                </div>
-                <div class="">
-                    <label for="name">Votre numéro de téléphone:</label> <br>
-                    <input type="text" name=" Votre numéro de téléphone" style="width: 900px; height: 50px;" required>
-                </div>
-                <div class="">
-                    <label for="name">Votre adresse e-mail:</label> <br>
-                    <input type="text" name=" Votre adresse e-mail " style="width: 900px; height: 50px;" required>
-                </div>
-                <div class="">
-                    <label for="name"> Votre message:</label> <br>
-                    <textarea name="Votre message" id="message" rows="5" cols="30"
-                        style="width: 900px; height: 200px;"></textarea>
-                </div>
-                <div class="">
-                    <input type="hidden" value="50" name="id-article">
-                </div>
-                <div class="">
-                    <label for="rgpd">
-                        <input type="checkbox" id="rgpd">
-                        En validant ce formulaire, je reconnais avoir pris connaissance de la <a href="">
-                            Politique de confidentialité</a> et des droits dont je dispose sur mes donéées
-                        personnelles.
-                    </label>
-                </div>
-                <div class="">
-                    <button type="submit" name="submit" style="width: 200px; height: 50px;">Envoyer un message</button>
-                </div>
-            </form>
-        </div>
+        <div class="container container-lg">
+            <h1 class="page-title">Nous contacter</h1>
+            <p id="intro-text">Besoin d’un conseil sur un entraînement, d’infos sur notre programme, ou
+                juste
+                envie de partager vos
+                derniers exploits sportifs ? Écrivez-nous ! Que vous soyez débutant motivé ou athlète
+                confirmé, on
+                aime
+                parler sport sous toutes ses formes. <br> <br>
+                Remplissez le formulaire ci-dessous ou contactez-nous à contact@haltero.fr.</p>
+            <div class="contact-form">
+                <form action="" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="name" class="text-form">Votre nom et prénom:</label>
+                        <input type="text" name=" Voter nom et prénom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="text-form">Votre numéro de téléphone:</label>
+                        <input type="text" name=" Votre numéro de téléphone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="text-form">Votre adresse e-mail:</label>
+                        <input type="text" name=" Votre adresse e-mail " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name" class="text-form"> Votre message:</label>
+                        <textarea name="Votre message" id="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="hidden" value="50" name="id-article">
+                    </div>
+                    <div class="">
+                        <label for="rgpd" class="text-rgpd">
+                            <input type="checkbox" id="rgpd">
+                            En validant ce formulaire, je reconnais avoir pris connaissance de la <a href="">
+                                Politique de confidentialité</a> et des droits dont je dispose sur mes donéées
+                            personnelles.
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" name="submit">Envoyer un
+                            message</button>
+                    </div>
+                </form>
+            </div>
     </section>
+    <footer id="footer2">
+        <div id="TitleContact">
+            <h2>Nous Situer</h2>
+        </div>
+        <div class="infos-map">
+            <div class="infos">
+                <img src="images/situer1.png" alt="Info-Map" />
+            </div>
+            <div class="map">
+                <img src="images/situer2.png" alt="Map" />
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
