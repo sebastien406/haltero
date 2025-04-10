@@ -3,15 +3,7 @@
   background-color: var(--color-background-header);
 }
 
-#TitleLastArticles {
-  font-family: "Oswald", sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding-bottom: 40px;
-  padding-left: 500px;
-}
+
 
 .article-flex-container {
   display: grid;

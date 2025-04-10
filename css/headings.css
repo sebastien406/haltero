@@ -9,14 +9,29 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
+
+  /* Taille du texte sur tablette */
+  @media (min-width: 768px) {
+    font-size: 50px;
+  }
 }
 
 h2 {
   font-size: 22px;
+
+    /* Taille du texte sur tablette */
+    @media (min-width: 768px) {
+      font-size: 30px;
+    }
 }
 
 h3 {
   font-size: 19px;
+
+    /* Taille du texte sur tablette */
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
 }
 
 .page-title {

@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <script async src="js/app.js"></script>
 </head>
 
 <!-- <body class="has-share-open has-overlay"> -->
@@ -44,38 +45,37 @@
   <div class="logo">
     <img src="images/LogoCouleurs.png" alt="image d'une haltère avec un titre no pain no gain" />
   </div>
-  <nav class="menu">
-    <ul>
-      <li>
-        <a href="" title="Accueil">Accueil</a>
-      </li>
-      <li>
-        <a href="" title="Bien s'équiper">Bien s'équiper</a>
-      </li>
-      <li>
-        <a href="" title="Haltérophilie">Haltérophilie</a>
-      </li>
-      <li>
-        <a href="" title="Cross-training">cross-training</a>
-      </li>
-      <li>
-        <a href="contact.html">Contact</a>
-      </li>
-    </ul>
+  <button class="openMainNav">☰</button>
+
+  <nav class="main-nav" role="navigation">
+    <div class="main-nav__wrapper">
+      <div class="main-nav_header">
+        <button class="closeMainNav">Fermer</button>
+        <ul>
+          <li><a href="#" title="Accueil">Accueil</a></li>
+          <li><a href="#" title="Bien s'équiper">Bien s'équiper</a></li>
+          <li><a href="#" title="Haltérophilie" class="selected">Haltérophilie</a></li>
+          <li><a href="#" title="Cross-training">Cross-training</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
+
+  <div class="layer"></div>
 </header>
+
 <div class="blocontainer">
 
 
   <section class="article">
+    <div class="image-container">
+      <img src="images/femme.png" alt="image d'une femme soulevant une haltère" />
+      <h1>Haltérophilie : Tout savoir sur ce sport olympique</h1>
+    </div>
     <div class="container">
 
       <div class="article__content">
-
-        <div class="image-container">
-          <img src="images/femme.png" alt="image d'une femme soulevant une haltère" />
-          <h1>Haltérophilie : Tout savoir sur ce sport olympique</h1>
-        </div>
         <div class="fil-ariane">
           <ul>
             <li><a href="">Accueil</a></li>
@@ -94,22 +94,24 @@
             </p>
           </div>
           <div class="sommaire">
-            <div class="titlesommaire">
-              <h2>SOMMAIRE</h2>
-            </div>
-            <div class="fermer">
-              <p>Fermer</p>
+            <div class="sommaire-header">
+              <div class="titlesommaire">
+                <h2>SOMMAIRE</h2>
+              </div>
+              <div class="fermer">
+                <p>Fermer</p>
+              </div>
             </div>
             <div class="tableau">
               <ul>
-                <li>Qu'est-ce que l'haltérophilie ?</li>
+                <li><a href="#halterophilie-cest-quoi" title="">Qu'est-ce que l'haltérophilie ?</a></li>
                 <li>L'haltérophilie est-elle faite pour moi ?</li>
                 <li>Faut-il être fort pour commencer ?</li>
                 <li>Est-ce que les sportifs pratiquent l'haltérophilie ?</li>
               </ul>
             </div>
           </div>
-          <div class="second">
+          <div class="second" id="halterophilie-cest-quoi">
             <h2>QU'EST-CE QUE L'HALTEROPHILIE ?</h2>
           </div>
           <div class="firstp">
@@ -209,7 +211,7 @@
 </div>
 </section>
 <section>
-  <div class="second-container">
+  <div class="container container-lg container-transparent">
     <div class="titrebas">
       <h2>AUCUN COMMENTAIRE</h2>
     </div>
@@ -262,36 +264,38 @@
     <button class="partager-cet-article" type="button">PARTAGER CET ARTICLE</button>
   </div>
 </section>
-<footer id="footer1">
-  <div id="TitleLastArticles">
-    <h2>Nos dernières publications</h2>
-  </div>
-  <div class="article-flex-container">
-    <div class="article-card">
-      <picture>
-        <img src="images/Hl1.png" alt="Gor Minasyan" />
-      </picture>
-      <div class="article-text">
-        <p>
-          <a href="">Gor Minasyan : titan de l’haltérophilie entre deux nations
-          </a>
-        </p>
-      </div>
+<footer id="footer">
+  <div class="container container-lg container-transparent">
+    <div class="page-title">
+      <h2>Nos dernières publications</h2>
     </div>
-    <div class="article-card">
-      <picture>
-        <img src="images/Hl2.png" alt="Tian Tao" />
-      </picture>
-      <div class="article-text">
-        <p><a href="">Tian Tao : Un Haltérophile au parcours mouvementé </a></p>
+    <div class="article-flex-container">
+      <div class="article-card">
+        <picture>
+          <img src="images/Hl1.png" alt="Gor Minasyan" />
+        </picture>
+        <div class="article-text">
+          <p>
+            <a href="">Gor Minasyan : titan de l’haltérophilie entre deux nations
+            </a>
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="article-card">
-      <picture>
-        <img src="images/Hl3.png" alt="Lu Xiaojun" />
-      </picture>
-      <div class="article-text">
-        <p><a href="">Lu Xiaojun : Légende chinoise de l’haltérophilie </a></p>
+      <div class="article-card">
+        <picture>
+          <img src="images/Hl2.png" alt="Tian Tao" />
+        </picture>
+        <div class="article-text">
+          <p><a href="">Tian Tao : Un Haltérophile au parcours mouvementé </a></p>
+        </div>
+      </div>
+      <div class="article-card">
+        <picture>
+          <img src="images/Hl3.png" alt="Lu Xiaojun" />
+        </picture>
+        <div class="article-text">
+          <p><a href="">Lu Xiaojun : Légende chinoise de l’haltérophilie </a></p>
+        </div>
       </div>
     </div>
   </div>
