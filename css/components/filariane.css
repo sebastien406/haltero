@@ -1,0 +1,18 @@
+.fil-ariane {
+}
+.fil-ariane ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+/* .fil-ariane li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0.25rem;
+  content: ">";
+} */
+
+.fil-ariane ul li + li:before {
+  content: ">";
+  padding: 0 10px;
+}
