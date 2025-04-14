@@ -23,9 +23,6 @@ body {
   text-align: center;
 }
 
-
-
-
 .text {
   margin-left: 50px;
   margin-right: 50px;
@@ -58,15 +55,13 @@ body {
   border-radius: 20px;
 }
 .fermer {
-
 }
 
 .sommaire-header {
-    padding: 30px 20px 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  padding: 30px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .tableau {
   border-top: solid 1px gray;
@@ -77,12 +72,12 @@ body {
 }
 
 .tableau ul li:not(:last-of-type) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .tableau ul li a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .qualites {
@@ -173,7 +168,6 @@ body {
   font-weight: bolder;
 }
 
-
 .article__content {
-    padding-top: 50px;
+  padding-top: 50px;
 }
