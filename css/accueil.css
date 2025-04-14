@@ -29,6 +29,11 @@ body {
   text-align: center;
 }
 
+.text {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
 .paragraphe {
   font-weight: bold;
   font-family: Arial;
@@ -66,6 +71,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .tableau {
   border-top: solid 1px gray;
@@ -76,6 +85,7 @@ body {
 }
 
 .tableau ul li:not(:last-of-type) {
+  margin-bottom: 10px;
   margin-bottom: 10px;
 }
 

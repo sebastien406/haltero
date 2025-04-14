@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=h, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="description"
     content="L’haltérophilie est un sport impressionnant qui allie force, technique et explosivité. Pourtant, il est souvent mal compris et perçu comme réservé aux athlètes ultra-puissants. En réalité, il s’agit d’une discipline accessible à tous, qui apporte de nombreux bienfaits physiques et mentaux." />
   <title>Haltérophilie</title>
@@ -17,63 +17,64 @@
 
 <!-- <body class="has-share-open has-overlay"> -->
 
+<body>
 
-<div class="box-wrapper">
-  <div class="box-container">
-    <div class="box">
-      <div class="box-title">
-        Partager
-        <div class="button-exit">
-          <button class="button-exit" type="button"> &#10006</button>
+  <div class="box-wrapper">
+    <div class="box-container">
+      <div class="box">
+        <div class="box-title">
+          Partager
+          <div class="button-exit">
+            <button class="button-exit" type="button"> &#10006</button>
+          </div>
         </div>
-      </div>
-      <div class="box-content">
-        <div class="button-submit">
-          <button type="submit" class="button">Partager sur Twitter</button>
-        </div>
-        <div class="">
-          <button type="submit" class="button button-facebook">Partager sur Facebook</button>
-        </div>
-        <div class="">
-          <button type="submit" class="button">Partager sur Pinterest</button>
+        <div class="box-content">
+          <div class="button-submit">
+            <button type="submit" class="button">Partager sur Twitter</button>
+          </div>
+          <div class="">
+            <button type="submit" class="button button-facebook">Partager sur Facebook</button>
+          </div>
+          <div class="">
+            <button type="submit" class="button">Partager sur Pinterest</button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<header id="header">
-  <div class="logo">
-    <img src="images/LogoCouleurs.png" alt="image d'une haltère avec un titre no pain no gain" />
-  </div>
-  <button class="openMainNav">☰</button>
+  <header id="header">
+    <div class="logo">
+      <img src="images/LogoCouleurs.png" alt="image d'une haltère avec un titre no pain no gain" />
+    </div>
+    <button class="openMainNav">☰</button>
 
-  <nav class="main-nav" role="navigation">
-    <div class="main-nav__wrapper">
-      <div class="main-nav_header">
-        <button class="closeMainNav">Fermer</button>
-        <ul>
-          <li><a href="#" title="Accueil">Accueil</a></li>
-          <li><a href="#" title="Bien s'équiper">Bien s'équiper</a></li>
-          <li><a href="#" title="Haltérophilie" class="selected">Haltérophilie</a></li>
-          <li><a href="#" title="Cross-training">Cross-training</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+    <nav class="main-nav" role="navigation">
+      <div class="main-nav__wrapper">
+        <div class="main-nav_header">
+          <button class="closeMainNav">Fermer</button>
+          <ul>
+            <li><a href="#" title="Accueil">Accueil</a></li>
+            <li><a href="#" title="Bien s'équiper">Bien s'équiper</a></li>
+            <li><a href="#" title="Haltérophilie" class="selected">Haltérophilie</a></li>
+            <li><a href="#" title="Cross-training">Cross-training</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="layer"></div>
-</header>
+    <div class="layer"></div>
+  </header>
 
-<div class="blocontainer">
+  <div class="blocontainer">
 
 
-  <section class="article">
-    <div class="image-container">
-      <img src="images/femme.png" alt="image d'une femme soulevant une haltère" />
-      <h1>Haltérophilie : Tout savoir sur ce sport olympique</h1>
-    </div>
-    <div class="container">
+    <section class="article">
+      <div class="image-container">
+        <img src="images/femme.png" alt="image d'une femme soulevant une haltère" />
+        <h1>Haltérophilie : Tout savoir sur ce sport olympique</h1>
+      </div>
+      <div class="container">
 
       <div class="article__content">
         <div class="fil-ariane">
@@ -230,35 +231,35 @@
       <div class="formulaire">
         <form action="commentaires" method="post">
 
-          <label for="name">Votre pseudonyme :</label>
-          <br>
-          <div class="name">
-            <input type="text" id="name" name="pseudonyme" />
-          </div>
-          <br>
-          <label for="mail">Votre adresse e-mail :</label>
-          <br>
-          <input type="email" id="mail" placeholder="Adresse e-mail" />
-          <br>
-          <label for="msg">Votre commentaire :</label>
-          <br>
-          <textarea id="msg" name="user_message"></textarea>
-      </div>
+            <label for="name">Votre pseudonyme :</label>
+            <br>
+            <div class="name">
+              <input type="text" id="name" name="pseudonyme" />
+            </div>
+            <br>
+            <label for="mail">Votre adresse e-mail :</label>
+            <br>
+            <input type="email" id="mail" placeholder="Adresse e-mail" />
+            <br>
+            <label for="msg">Votre commentaire :</label>
+            <br>
+            <textarea id="msg" name="user_message"></textarea>
+        </div>
 
-      <div class="button-commentaire"></div>
-      <label for="rgpd">
-        <input type="checkbox" id="rgpd" name="commentaires" />
-        En ajoutant un commentaire, je reconnais avoir pris connaissance
-        de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données
-        personnelles.</label>
-      <br>
-      <div class="ajoute-com">
-        <button class="commentaire" type="button">Ajouter mon commentaire</button>
+        <div class="button-commentaire"></div>
+        <label for="rgpd">
+          <input type="checkbox" id="rgpd" name="commentaires" />
+          En ajoutant un commentaire, je reconnais avoir pris connaissance
+          de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données
+          personnelles.</label>
+        <br>
+        <div class="ajoute-com">
+          <button class="commentaire" type="button">Ajouter mon commentaire</button>
+        </div>
+        <div class="">
+          <input type="hidden" value="civilité">
+        </div>
       </div>
-      <div class="">
-        <input type="hidden" value="civilité">
-      </div>
-    </div>
 
     </form>
   </div>
