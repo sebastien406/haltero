@@ -6,11 +6,17 @@ body {
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
+  @media (width >480px){
+    max-width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 
 .image-container img {
   width: 100%;
   position: relative;
+  
 }
 
 .image-container h1 {
@@ -23,14 +29,6 @@ body {
   text-align: center;
 }
 
-
-
-
-.text {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-}
 .paragraphe {
   font-weight: bold;
   font-family: Arial;
@@ -57,16 +55,17 @@ body {
   background-color: #e4e1e1;
   border-radius: 20px;
 }
-.fermer {
-
+.video{
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
 }
-
 .sommaire-header {
-    padding: 30px 20px 0px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+  padding: 30px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .tableau {
   border-top: solid 1px gray;
@@ -77,12 +76,12 @@ body {
 }
 
 .tableau ul li:not(:last-of-type) {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .tableau ul li a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .qualites {
@@ -131,6 +130,11 @@ body {
   padding-bottom: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
+  @media (width >480px){
+    max-width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
 }
 .com-commentaire {
   font-weight: bold;
@@ -173,7 +177,6 @@ body {
   font-weight: bolder;
 }
 
-
 .article__content {
-    padding-top: 50px;
+  padding-top: 50px;
 }
