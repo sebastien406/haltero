@@ -12,6 +12,7 @@
 @import url("layer.css");
 @import url("navigation.css");
 @import url("accueil.css");
+@import url("pageaccueil.css");
 
 .container {
   padding: 0 20px;

@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #eeeeee 45%, #000000 65%);
+  font-family: Arial, sans-serif;
+}
+
+/* Footer accueil */
+.footer-accueil {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: "Maitree", sans-serif;
+  font-size: 18px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+footer button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+footer button:hover {
+  background-color: purple;
+}
+
+/* Section Accueil */
+.section-accueil {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+/* Bloc texte (titre + légende) */
+.accueil-h1 {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accueil-h1 h1 {
+  font-family: "Maitree";
+  font-size: 40px;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+}
+
+.accueil-legende {
+  font-family: "Maitree", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Bloc image */
+.image-halterophile {
+  max-width: 45%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.image-halterophile img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Articles */
+.article-container {
+  background-color: #eeeeee;
+  border-radius: 15px;
+  margin: 20px;
+  width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.article-accueil {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 15px;
+  height: 200px;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.article-container-title {
+  display: flex;
+  justify-content: center;
+  font-family: "Maitree", sans-serif;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.article-container-text {
+  display: flex;
+  justify-content: center;
+  font-family: "Maitree", sans-serif;
+  margin: 15px;
+}
+
+.btn-article-accueil {
+  display: flex;
+  justify-content: center;
+  font-family: "Maitree", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.btn-article-accueil button {
+  background-color: purple;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-article-accueil button:hover {
+  background-color: #000000;
+}
