@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <script async src="js/app.js"></script>
+  <link rel="shortcut icon" href="images/LogoCouleurs.png">
 </head>
 
 <!-- <body class="has-share-open has-overlay"> -->
@@ -25,19 +26,13 @@
         <div class="box-title">
           Partager
           <div class="button-exit">
-            <button class="button-exit" type="button"> &#10006</button>
+            <button class="btn btn-close" type="button">&#10006</button>
           </div>
         </div>
         <div class="box-content">
-          <div class="button-submit">
-            <button type="submit" class="button">Partager sur Twitter</button>
-          </div>
-          <div class="">
-            <button type="submit" class="button button-facebook">Partager sur Facebook</button>
-          </div>
-          <div class="">
-            <button type="submit" class="button">Partager sur Pinterest</button>
-          </div>
+          <a href="#" class="btn btn-twitter">Partager sur Twitter</a>
+          <a href="#" class="btn btn-facebook">Partager sur Facebook</a>
+          <a href="#" class="btn btn-pinterest">Partager sur Pinterest</a>
         </div>
       </div>
     </div>
@@ -67,21 +62,17 @@
   </header>
 
   <div class="blocontainer">
-
-
     <section class="article">
       <div class="image-container">
         <img src="images/femme.png" alt="image d'une femme soulevant une haltère" />
         <h1>Haltérophilie : Tout savoir sur ce sport olympique</h1>
       </div>
-      <div class="container">
-
+      <div class="container container-article">
         <div class="article__content">
           <div class="fil-ariane">
             <ul>
               <li><a href="">Accueil</a></li>
               <li><a href="">Halterophilie</a></li>
-              <li>Haltérophilie : Tout savoir sur ce sport olympique</li>
             </ul>
           </div>
           <div class="text">
@@ -162,6 +153,12 @@
               </ul>
             </div>
             <div>
+              <div class="video">
+                <iframe width="100%" height="415" src="https://www.youtube.com/embed/pqmCxBBpf7Y?si=TIrl5WV4btB5Nxre"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
               <div class="titlered">
                 <h2>L’HALTEROPHILIE EST-ELLE UN SPORT FAIT POUR MOI ?</h2>
               </div>
@@ -221,54 +218,55 @@
           Aucun commentaire n’a été publié pour le moment !
         </p>
       </div>
-      <div class="second-bloc">
-        <div class="com-commentaire">
-          <h2>AJOUTER UN COMMENTAIRE</h2>
-        </div>
-        <div class="formulaire">
-          <form action="commentaires" method="post">
+    </div>
+    <div class="container">
+      <div class="com-commentaire">
+        <h2>AJOUTER UN COMMENTAIRE</h2>
+      </div>
+      <div class="formulaire">
+        <form action="commentaires" method="post">
 
-            <label for="name">Votre pseudonyme :</label>
-            <br>
-            <div class="name">
-              <input type="text" id="name" name="pseudonyme" />
-            </div>
-            <br>
-            <label for="mail">Votre adresse e-mail :</label>
-            <br>
-            <input type="email" id="mail" placeholder="Adresse e-mail" />
-            <br>
-            <label for="msg">Votre commentaire :</label>
-            <br>
-            <textarea id="msg" name="user_message"></textarea>
-        </div>
-
-        <div class="button-commentaire"></div>
-        <label for="rgpd">
-          <input type="checkbox" id="rgpd" name="commentaires" />
-          En ajoutant un commentaire, je reconnais avoir pris connaissance
-          de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données
-          personnelles.</label>
-        <br>
-        <div class="ajoute-com">
-          <button class="commentaire" type="button">Ajouter mon commentaire</button>
-        </div>
-        <div class="">
-          <input type="hidden" value="civilité">
-        </div>
+          <label for="name">Votre pseudonyme :</label>
+          <br>
+          <div class="name">
+            <input type="text" id="name" name="pseudonyme" />
+          </div>
+          <br>
+          <label for="mail">Votre adresse e-mail :</label>
+          <br>
+          <input type="email" id="mail" placeholder="Adresse e-mail" />
+          <br>
+          <label for="msg">Votre commentaire :</label>
+          <br>
+          <textarea id="msg" name="user_message"></textarea>
       </div>
 
-      </form>
+      <div class="button-commentaire"></div>
+      <label for="rgpd">
+        <input type="checkbox" id="rgpd" name="commentaires" />
+        En ajoutant un commentaire, je reconnais avoir pris connaissance
+        de la <a href="">Politique de confidentialité</a> et des droits dont je dispose sur mes données
+        personnelles.</label>
+      <br>
+      <div class="ajoute-com">
+        <button class="btn" type="button">Ajouter mon commentaire</button>
+      </div>
+      <div class="">
+        <input type="hidden" value="civilité">
+      </div>
+    </div>
+
+    </form>
     </div>
     </div>
     <div class="partager-cet-article">
-      <button class="partager-cet-article" type="button">PARTAGER CET ARTICLE</button>
+      <button class="btn btn-share" type="button">PARTAGER CET ARTICLE</button>
     </div>
   </section>
   <footer id="footer">
     <div class="container container-lg container-transparent">
       <div class="page-title">
-        <h2>Nos dernières publications</h2>
+        <h2>NOS DERNIERES PUBLICATIONS</h2>
       </div>
       <div class="article-flex-container">
         <div class="article-card">

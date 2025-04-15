@@ -22,20 +22,6 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.contact-form button {
-  margin: 20px;
-  padding: 10px 20px;
-  background-color: #0a0b0c;
-  color: white;
-  border-radius: 6px;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #ff0000;
-}
-
 .text-form {
   font-size: 16px;
   color: #000000;
