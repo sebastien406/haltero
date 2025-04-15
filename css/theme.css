@@ -1,4 +1,5 @@
 @import url("reset.css");
+@import url("document.css");
 @import url("settings/config.variables.css");
 @import url("components/filariane.css");
 @import url("headings.css");
@@ -11,37 +12,41 @@
 @import url("settings/config.z-indexes.css");
 @import url("layer.css");
 @import url("navigation.css");
-@import url("accueil.css");
+@import url("haltero.css");
 
 .container {
-  line-height: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  font-size: larger;
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 90%;
   justify-content: center;
   border: solid 0px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-bottom: 30px;
-  @media (width >480px){
+
+  @media (max-width: 480px) {
     max-width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-right: 200px;
-    margin-left: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: var(--font-size-sm);
   }
-    
-  
 }
 
 .container-lg {
-  max-width: 90%;
   background-color: #ffffff;
   box-shadow: 0 0 10px 4px #c0c0c0;
   margin-bottom: 40px;
   border-radius: 10px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
 }
 
 .container-transparent {
@@ -50,30 +55,11 @@
   padding: 0;
 }
 
-@media screen and (max-width: 480px) {
-  .container-lg {
-    max-width: 90%;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
-}
-
-.second-bloc {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  padding: 0 20px;
+.container-article .text {
+  width: 75%;
   margin: 0 auto;
-  max-width: 1000px;
-  justify-content: center;
-  border: solid 0px;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  background-color: rgb(255, 255, 255);
-  padding-bottom: 50px;
-  padding-top: 30px;
-  @media (width >480px){
-    max-width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+
+  @media (max-width: 480px) {
+    width: 100%;
   }
 }

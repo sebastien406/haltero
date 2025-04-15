@@ -4,19 +4,18 @@ body {
 
 .image-container {
   position: relative;
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
-  @media (width >480px){
+  @media (max-width<480px) {
     max-width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 .image-container img {
   width: 100%;
   position: relative;
-  
 }
 
 .image-container h1 {
@@ -29,14 +28,12 @@ body {
   text-align: center;
 }
 
-.text {
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-}
 .paragraphe {
   font-weight: bold;
   font-family: Arial;
+  @media (width>480px) {
+    font-size: var--font-size-sm();
+  }
 }
 .second {
   font-weight: bold;
@@ -60,7 +57,7 @@ body {
   background-color: #e4e1e1;
   border-radius: 20px;
 }
-.video{
+.video {
   padding-top: 50px;
   display: flex;
   justify-content: center;
@@ -135,31 +132,17 @@ body {
   border: solid 1px #4d709c;
   border-radius: 10px;
   color: #4d709c;
-  max-width: 1000px;
+  max-width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  @media (width >480px){
-    max-width: 100%;
-    padding-left: 200px;
-    padding-right: 200px;
-  }
 }
 .com-commentaire {
   font-weight: bold;
   margin-bottom: 30px;
 }
-.commentaire {
-  background-color: black;
-  color: #fdfdfd;
-  display: flex;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-top: 5%;
-}
+
 .formulaire input {
   width: 80%;
   height: 30px;
@@ -175,18 +158,18 @@ body {
 .ajoute-com {
   margin-bottom: 30px;
 }
-.ajoute-com button {
-  border-radius: 10px;
-}
-.partager-cet-article {
-  display: block;
-  margin: auto;
-  padding: 15px;
-  border-radius: 5px;
-  margin-bottom: 30px;
-  font-weight: bolder;
-}
 
 .article__content {
   padding-top: 50px;
+}
+.article-text p {
+  @media (max-width: 480) {
+    padding-top: 20px;
+  }
+}
+
+.partager-cet-article {
+  display: flex;
+  margin: 20px 0;
+  justify-content: center;
 }

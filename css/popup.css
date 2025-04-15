@@ -40,7 +40,7 @@ body.has-share-open .box-container {
 
 body.has-share-open .box-wrapper {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -73,13 +73,18 @@ body.has-share-open .box-title {
   border-bottom: 1px solid var(--border-color);
   display: flex;
   font-weight: bold;
+  justify-content: space-between;
+  font-family: var(--font-family);
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
 body.has-share-open .box-content {
   display: flex;
   justify-content: center;
   outline: none;
-  margin-top: 10px;
+  padding: 40px;
+  gap: 20px;
 }
 
 @media (max-width: 768px) {
@@ -91,7 +96,6 @@ body.has-share-open .box-content {
 
   body.has-share-open .box-content {
     flex-direction: column;
-    padding: 10px;
-    margin-top: 10px;
+    gap: 5px;
   }
 }

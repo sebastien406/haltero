@@ -1,17 +1,15 @@
 .fil-ariane {
-  padding-bottom: 40px;
-  @media (width <480px){
+  padding-bottom: 30px;
+
+  @media (width<480px) {
     font-weight: 700;
-    font-size: x-small;
-  
-}
+  }
 }
 .fil-ariane ul {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
-
 }
 /* .fil-ariane li:not(:last-child)::after {
   display: inline-block;
@@ -22,7 +20,4 @@
 .fil-ariane ul li + li:before {
   content: ">";
   padding: 0 10px;
-  @media (width <480px){
-    padding: 0 1px;
-  }
 }

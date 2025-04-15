@@ -5,14 +5,20 @@
 #footer{
   background-color: #000000;
   padding: 20px;
- }
+
+}
 .page-title{
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 40px;
+  padding: 40px; 
+  @media (max-width:480){
+ display: flex;
+ text-align: center;
 }
+}
+
 
 
 
@@ -20,6 +26,10 @@
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   grid-gap: 20px;
+  @media (width <480px){
+    display: grid;
+   grid-template-columns: 1fr;
+}
 }
 
 .article-flex-container picture {
@@ -43,7 +53,6 @@
   height: 100%;
   margin-bottom: 40px;
   @media (width <480px){
-  background-color: rgb(255, 255, 255);
   padding-bottom: 50px;
 }
 }
