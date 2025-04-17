@@ -7,12 +7,13 @@
   padding: 20px;
 
 }
-.page-title{
+.page-title a{
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-content: center;
   padding: 40px; 
+  text-decoration: none;
   @media (max-width:480){
  display: flex;
  text-align: center;
