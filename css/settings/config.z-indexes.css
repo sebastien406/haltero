@@ -1,4 +1,4 @@
 :root {
-  --z-index-layer: 0;
-  --z-index-main-nav: 9;
+  --z-index-layer: 9;
+  --z-index-main-nav: 99;
 }

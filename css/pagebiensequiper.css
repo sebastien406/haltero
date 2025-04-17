@@ -1,0 +1,297 @@
+.titre-principal {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.intro {
+  text-align: center;
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sommaire {
+  background-color: #fae4fd;
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin: 10px 100px;
+}
+
+.sommaire h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2e2b85;
+  font-weight: bold;
+  text-align: left;
+}
+
+.sommaire p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  white-space: pre-line;
+}
+
+h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-weight: bold;
+  color: #222;
+}
+
+section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 60px auto;
+}
+
+.programme-section {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  font-family: "Georgia", serif;
+  color: #2a2a2a;
+  line-height: 1.8;
+}
+
+.programme-section h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  color: #1e1e1e;
+}
+
+.programme-section h3,
+.programme-section h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #a855a1;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.programme-section p {
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.programme-section ul {
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.programme-section li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.programme-section .conseils {
+  background-color: #000000;
+  border-left: 6px solid #a855a1;
+  padding: 25px 30px;
+  border-radius: 16px;
+  margin: 50px 0 30px 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #fff;
+}
+
+.programme-section .section-bloc {
+  margin-bottom: 50px;
+}
+
+.haltero-techniques {
+  max-width: 900px;
+  margin: 4rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.haltero-techniques h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.haltero-techniques img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.haltero-techniques p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.haltero-risques {
+  max-width: 900px;
+  margin: 4rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.haltero-risques h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.haltero-risques p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.haltero-equipements {
+  max-width: 900px;
+  margin: 4rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+  line-height: 1.6;
+}
+
+.equipements-titre {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.equipement-item {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.equipement-item:last-child {
+  border-bottom: none;
+}
+
+.equipement-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.equipement-item p {
+  text-align: justify;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .titre-principal {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 25px;
+  }
+
+  .sommaire {
+    margin: 10px 25px;
+  }
+
+  .sommaire h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .sommaire p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .programme-section {
+    max-width: 90%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .programme-section h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .programme-section h3,
+  .programme-section h4 {
+    font-size: 16px;
+  }
+
+  .programme-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .programme-section .conseils {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .haltero-techniques,
+  .haltero-risques,
+  .haltero-equipements {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  .haltero-techniques h2,
+  .haltero-risques h2,
+  .haltero-equipements h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .equipement-item h3 {
+    font-size: 1rem;
+  }
+
+  .haltero-techniques img,
+  .haltero-risques img,
+  .haltero-equipements img {
+    max-width: 100%;
+    height: auto;
+  }
+}

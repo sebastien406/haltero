@@ -1,7 +1,13 @@
+/* Quand le menu est ouvert (sur mobile) */
 body.has-menu-opened .main-nav {
   display: block;
 }
 
+body.has-menu-opened {
+  overflow: hidden;
+}
+
+/* Bouton "ouvrir" (hamburger) */
 #header .openMainNav {
   display: flex;
   margin-right: 20px;
@@ -12,36 +18,47 @@ body.has-menu-opened .main-nav {
   }
 }
 
+body.has-menu-opened #header .openMainNav {
+  display: none;
+}
+
+/* NAV principale mobile */
 .main-nav {
   position: absolute;
   z-index: var(--z-index-main-nav);
-  background: #fff;
+  background: black;
   height: 100vh;
   top: 0;
-  left: 0;
-  right: 20%;
-
+  right: 0;
+  left: 20%;
   display: none;
 }
 
 .main-nav__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  padding-top: 100px;
+  padding-left: 30px;
+}
+
+/* Liste des liens */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav ul li {
+  margin-bottom: 30px;
 }
 
 .main-nav ul li a {
   display: block;
   padding: 15px 25px;
   text-decoration: none;
-  color: black;
-  transition: linear all 0.2s;
-}
-
-@media screen and (min-width: 1024px) {
-  .main-nav ul li a {
-    color: rgb(255, 255, 255);
-  }
+  color: rgb(255, 255, 255);
+  transition: all 0.2s linear;
 }
 
 .main-nav ul li a:hover,
@@ -50,37 +67,78 @@ body.has-menu-opened .main-nav {
   color: #fff;
 }
 
-.openMainNav {
-  display: block;
+/* Bouton fermer */
+.closeMainNav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  background-color: var(--color-2);
+  padding: 10px;
+  border-radius: 50%;
+  color: purple;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
 }
 
-@media (min-width: 1024px) {
-  .openMainNav {
-    display: none;
-  }
+.openMainNav {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  z-index: 9999;
+  background-color: var(--color-2);
+  border-radius: 50%;
+  color: purple;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
 
+/* VERSION DESKTOP (à partir de 768px) */
+@media screen and (min-width: 768px) {
   .main-nav {
     position: static;
     height: auto;
     background: none;
     display: block;
+    left: auto;
+    right: auto;
   }
 
   .main-nav__wrapper {
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
   }
 
   .main-nav ul {
     display: flex;
+    gap: 30px;
   }
 
+  .main-nav ul li {
+    margin: 0;
+  }
+
+  .main-nav ul li a {
+    color: white;
+    padding: 10px 15px;
+  }
+
+  .openMainNav,
   .closeMainNav {
     display: none;
   }
+}
 
-  .openMainNav {
-    display: none;
-  }
+.main-content {
+  z-index: var(--z-index-layer);
 }

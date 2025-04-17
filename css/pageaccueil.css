@@ -1,15 +1,33 @@
-html {
-  height: 100%;
+html,
+body {
+  /* height: 100%; */
   margin: 0%;
 }
 
-body {
+.bodyaccueil {
   margin: 0;
   height: 100%;
-  background: linear-gradient(to bottom, #eeeeee 45%, #000000 65%);
+  background: #000000;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 
 /* Footer accueil */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1; /* Permet au contenu de prendre tout l'espace restant */
+}
+
 .footer-accueil {
   background-color: #000;
   color: #fff;
@@ -17,10 +35,18 @@ body {
   font-family: "Maitree", sans-serif;
   font-size: 18px;
   height: 15%;
+  margin-bottom: 0;
+}
+.text-footer {
+  padding-top: 20px;
 }
 .content {
-  padding-bottom: 100px;
+  padding: 20px 60px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
+
 footer p {
   margin-bottom: 20px;
 }
@@ -34,6 +60,7 @@ footer button {
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 10px 10px;
 }
 
 footer button:hover {
@@ -44,7 +71,10 @@ footer button:hover {
 .section-accueil {
   display: flex;
   align-items: center;
-  padding: 80px;
+
+  @media (min-width: 768px) {
+    max-width: 60%;
+  }
 }
 
 /* Bloc texte (titre + légende) */
@@ -71,35 +101,86 @@ footer button:hover {
 
 /* Bloc image */
 .image-halterophile {
-  max-width: 45%;
+  /* max-width: 45%;
   position: absolute;
   top: 14%;
-  right: 2%;
+  right: 2%; */
 }
 
 .image-halterophile img {
-  width: 100%;
+  /* width: 100%;
   height: auto;
-  display: block;
+  display: block; */
 }
 
 /* Articles */
 .article-container {
-  min-width: 250px;
   background-color: #eeeeee;
   border-radius: 10px;
-  height: 250px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   border-top: 5px solid purple;
+  position: relative;
+  padding: 20px;
+}
+
+.article-container:nth-of-type(1) {
+  order: 1;
+
+  @media (max-width: 1024px) {
+    order: 2;
+  }
+}
+
+.article-container:nth-of-type(2) {
+  order: 2;
+
+  @media (max-width: 1024px) {
+    order: 3;
+  }
+}
+
+.article-container:nth-of-type(3) {
+  order: 3;
+
+  @media (max-width: 1024px) {
+    order: 2;
+  }
+  @media (max-width: 768px) {
+    order: 1;
+  }
+}
+
+.article-container.has-image {
+  @media (max-width: 768px) {
+    margin-top: 180px;
+  }
+}
+
+.article-container.has-image .image-halterophile {
+  position: absolute;
+  bottom: 100%;
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.article-container.has-image .image-halterophile img {
+  vertical-align: bottom;
+  max-width: 250px;
 }
 
 .article-accueil {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 150px;
-  height: 200px;
-  width: 70%;
-  margin-left: 15%;
+  gap: 30px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .article-container-title {
@@ -137,4 +218,9 @@ footer button:hover {
 .btn-article-accueil button:hover {
   background-color: #000000;
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 1024px) {
+  .article-container {
+  }
 }
