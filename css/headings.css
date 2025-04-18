@@ -37,11 +37,20 @@ h3 {
 .page-title {
   padding-top: 20px;
   margin-bottom: 15px;
+  color: black;
 }
 
 h1.accueil-h1 {
   font-family: "Maitree", serif;
   font-weight: 400;
   text-transform: none;
+  color: #1a1a1a;
+}
+
+h1.contact-h1 {
+  color: #1a1a1a;
+}
+
+h1.biensequiper-h1 {
   color: #1a1a1a;
 }

@@ -16,6 +16,7 @@
 @import url("pageaccueil.css");
 @import url("pagearticle.css");
 @import url("pagebiensequiper.css");
+@import url("pagecrosstraining.css");
 
 .container {
   font-family: Arial, Helvetica, sans-serif;
