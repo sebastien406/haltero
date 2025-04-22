@@ -1,0 +1,79 @@
+.alert {
+  max-width: 400px;
+  width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.alert h2 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Succès (vert) */
+.alert-success {
+  background-color: #e6f7ec;
+  border-color: #b7e3c7;
+  color: #276738;
+}
+
+/* Attention (jaune) */
+.alert-warning {
+  background-color: #fff9e6;
+  border-color: #ffe58f;
+  color: #8c6d1f;
+}
+
+/* Erreur (rouge) */
+.alert-error {
+  background-color: #fdecea;
+  border-color: #f5c2c0;
+  color: #a1281f;
+}
+
+/* Informations (bleu) */
+.alert-info {
+  background-color: #e6f0fb;
+  border-color: #a8c7f0;
+  color: #1c4a83;
+}
+
+/* Rappel (jaune clair) */
+.alert-reminder {
+  background-color: #fff7db;
+  border-color: #ffe066;
+  color: #b07c2b;
+}
+
+/* Connexion (bleu clair) */
+.alert-login {
+  background-color: #e8f4fc;
+  border-color: #a3d8f7;
+  color: #1a73e8;
+}
+
+/* Chargement (gris clair) */
+.alert-loading {
+  background-color: #f4f4f4;
+  border-color: #cccccc;
+  color: #777777;
+}
+
+/* Icônes dans les alertes */
+.alert svg {
+  width: 20px;
+  height: 20px;
+}
