@@ -87,3 +87,20 @@
 .button-facebook {
   background: rgb(253, 253, 254);
 } */
+
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: purple;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#btnTop:hover {
+  background-color: black;
+}
