@@ -1,6 +1,11 @@
-.bodyindex {
+body {
   background-color: #d5d5d5;
+  color:var( --color-1);
 }
+.dark {
+  background-color: black;
+  color: white;
+}  
 
 .image-container {
   position: relative;
