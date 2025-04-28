@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script async src="js/btnRemonter.js"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
         rel="stylesheet">
@@ -29,7 +30,7 @@
             <nav class="main-nav" role="navigation">
                 <div class="main-nav__wrapper">
                     <div class="main-nav_header">
-                        <button class="closeMainNav">Fermer</button>
+                        <button class="closeMainNav">❌</button>
                         <ul>
                             <li><a href="accueil.html" title="Accueil">Accueil</a></li>
                             <li><a href="biensequiper.html" title="Bien s'équiper">Bien s'équiper</a></li>
@@ -40,22 +41,21 @@
                     </div>
                 </div>
             </nav>
-
             <div class="layer"></div>
             <div class="box-wrapper">
                 <div class="box-container">
-                  <div class="box">
-                    <div class="box-title">
-                      Se connecter
-                      <div class="button-exit">
-                        <button class="btn btn-close" type="button">&#10006</button>
-                      </div>
-                    </div>
+                    <div class="box">
+                        <div class="box-title">
+                            Se connecter
+                            <div class="button-exit">
+                                <button class="btn btn-close" type="button">&#10006</button>
+                            </div>
+                        </div>
                         <div class="contact-form">
                             <form action="" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label for="name" class="text-form">Adresse e-mail:</label>
-                                    <input type="text" name=" Votre adresse e-mail " required>
+                                    <input type="text" id="email-login" name=" Votre adresse e-mail " required>
                                 </div>
                                 <div class="form-group">
                                     <label for="name" class="text-form"> Mot de passe</label>
@@ -63,26 +63,26 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="name" class="text-form"></label>
-                                    <input type="button" class="btn btn-twitter" value="Me connecter">
+                                    <input type="button" id="submit-login" class="btn btn-twitter" value="Me connecter">
                                 </div>
                                 <div class="span">
-                                <span>Ou</span>
+                                    <span>Ou</span>
                                 </div>
                                 <div class="google">
                                     <div class="icon-google">
-                                   <img src="images/icone Google.png" alt="">
+                                        <img src="images/icone Google.png" alt="">
                                     </div>
-                                
-                                   <a href="">Se connecter avec Google</a>
-                                   
-                                    <input type="hidden" value="50" name="id-article">
+
+                                    <a href="">Se connecter avec Google</a>
+
+                                    <input type="hidden" id="article-id" value="50" name="id-article">
                                 </div>
-                              </div> 
-                            </form>
                         </div>
+                        </form>
                     </div>
                 </div>
-              </div>    
+            </div>
+            </div>
         </header>
         <div class="container container-lg container-transparent fil-ariane">
             <ul>
@@ -93,7 +93,7 @@
         <div class="container container-lg">
             <div class="partager-cet-article">
                 <button class="btn btn-share" type="button">Se connecter</button>
-              </div>
+            </div>
             <div class="page-title">
                 <h1 class="contact-h1">Nous contacter</h1>
             </div>
@@ -109,22 +109,22 @@
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="name" class="text-form">Votre nom et prénom:</label>
-                        <input type="text" name=" Voter nom et prénom" required>
+                        <input type="text" id="full-name" name=" Voter nom et prénom" required>
                     </div>
                     <div class="form-group">
                         <label for="name" class="text-form">Votre numéro de téléphone:</label>
-                        <input type="text" name=" Votre numéro de téléphone" required>
+                        <input type="text" id="phone-number" name=" Votre numéro de téléphone" required>
                     </div>
                     <div class="form-group">
                         <label for="name" class="text-form">Votre adresse e-mail:</label>
-                        <input type="text" name=" Votre adresse e-mail " required>
+                        <input type="text" id="email-contact" name=" Votre adresse e-mail " required>
                     </div>
                     <div class="form-group">
                         <label for="name" class="text-form"> Votre message:</label>
                         <textarea name="Votre message" id="message"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="hidden" value="50" name="id-article">
+                        <input type="hidden" id="article-id" value="50" name="id-article">
                     </div>
                     <div class="">
                         <label for="rgpd" class="text-rgpd">
@@ -140,6 +140,9 @@
                 </form>
             </div>
     </section>
+    <div class="btnTop">
+        <button id="btnTop">Remonter en haut</button>
+    </div>
     <footer id="footer2">
         <div id="TitleContact">
             <h2>Nous Situer</h2>
