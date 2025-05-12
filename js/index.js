@@ -12,18 +12,27 @@ document.addEventListener('DOMContentLoaded',function(){
     compteurDiv.textContent = `Cet article contient ${nombreDeMots} mots, à plus ou moins 40 mots près.`;
 });
 
-let toggle_btn = document.getElementById('theme-btn');
-let body = document.getElementsByTagName('body')[0];
 
-let dark_theme_class = 'dark';
+function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+}
 
-toggle_btn.addEventListener('click', function() {
-    if (body.classList.contains(dark_theme_class)) {
-    
-        body.classList.remove(dark_theme_class);
-    }
-    else {
-        body.classList.add(dark_theme_class);
-    }
+const likeButton = document . getElementById ( 'likeButton' ); 
+const likeCount = document . getElementById ( 'likeCount' ); 
+let likes = 0 ; 
+let message = "Vous aimez vraiment cet article !";
+let ajoutMessage = document.createElement("p");
+let messageDiv = document.querySelector(".messageAjouter");
+document.body.appendChild(ajoutMessage);
+
+likeButton. addEventListener ( 'click' , () => { 
+ likes++; 
+  console.log(likes);
+ afficheMessage();
 });
-
+function afficheMessage(){
+  if(likes === 5) {
+   ajoutMessage.innerText = message;
+    messageDiv.appendChild(ajoutMessage);
+ }
+  };
