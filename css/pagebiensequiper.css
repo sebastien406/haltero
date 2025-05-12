@@ -16,26 +16,58 @@
   margin-right: auto;
 }
 
-.sommaire {
-  background-color: #fae4fd;
-  border-radius: 30px;
-  padding: 10px 30px;
-  margin: 10px 100px;
+/* Style global pour le sommaire */
+#sommaire {
+  margin: 70px;
+  background-color: #d0becb;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: none;
 }
 
-.sommaire h2 {
-  font-size: 28px;
-  margin-bottom: 25px;
-  color: #2e2b85;
+#sommaire h3 {
+  font-size: 1.8rem;
   font-weight: bold;
-  text-align: left;
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.sommaire p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  white-space: pre-line;
+#sommaire ul {
+  padding-left: 0;
+}
+
+#sommaire li {
+  font-size: 1.2rem;
+  color: #555;
+  padding: 8px 0;
+}
+
+#sommaire li:hover {
+  background-color: #f388d8;
+  cursor: pointer;
+}
+
+/* Effet sur le bouton pour afficher/masquer le sommaire */
+#toggleSommaire {
+  background-color: #473446;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+#toggleSommaire:hover {
+  background-color: #9b4780;
 }
 
 h2 {

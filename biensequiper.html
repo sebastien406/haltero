@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/theme.css" type="text/css">
     <script async src="js/app.js"></script>
     <script async src="js/btnRemonter.js"></script>
+    <script async src="js/sommaire.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -54,19 +55,13 @@
                     puissent réaliser une salle pour pratiquer de l’haltérophilie chez eux..</p>
             </div>
         </section>
-        <section class="sommaire">
-            <h2>Sommaire :</h2>
-            <p>1 - Quels sont les risques de l’haltérophilie et les différentes blessures possibles ?</p>
-            <p>2 - Haltérophilie : l’Épaulé-jeté et l’arraché</p>
-            <p>3 - Débutant ou expert, trouvez LE programme d’haltérophilie qui vous correspond</p>
-            <p>4 - Les équipements essentiels</p>
-            <p>4.1 - Les leggings</p>
-            <p>4.2 - Une trousse de secours</p>
-            <p>4.3 - La magnésie</p>
-            <p>4.4 - Les sangles de tirage</p>
+        <button id="toggleSommaire">Afficher / Masquer le sommaire</button>
+        <section id="sommaire" style="display: none;">
+            <h3>Sommaire :</h3>
+            <ul id="sommaireListe"></ul>
         </section>
         <section class="haltero-risques">
-            <h2>1 - Quels sont les risques de l’haltérophilie et les différentes blessures possibles ?</h2>
+            <h2 id="risques">1 - Quels sont les risques de l’haltérophilie et les différentes blessures possibles ?</h2>
             <p>
                 L’haltérophilie est un sport exigeant qui sollicite intensément les articulations, les tendons et les
                 muscles.
@@ -77,7 +72,7 @@
         </section>
 
         <section class="haltero-techniques">
-            <h2>2 - Haltérophilie : l’Épaulé-jeté et l’arraché</h2>
+            <h2 id="techniques">2 - Haltérophilie : l’Épaulé-jeté et l’arraché</h2>
             <img src="images/demoepaulejete.jpeg" alt="Étapes de l’épaulé-jeté">
             <p>
                 L’épaulé-jeté diffère un peu de la discipline précédente. En effet, il faut soulever la barre en deux
@@ -104,7 +99,7 @@
 
         <section class="programme-section">
             <div class="section-bloc">
-                <h2>3 - Débutant ou expert, trouvez LE programme d’haltérophilie qui vous correspond</h2>
+                <h2 id="programme">3 - Débutant ou expert, trouvez LE programme d’haltérophilie qui vous correspond</h2>
 
                 <div class="programme-bloc">
                     <h3>🏋️ Le Full-body : un programme pour débutant</h3>
@@ -183,10 +178,10 @@
         </section>
 
         <section class="haltero-equipements">
-            <h2 class="equipements-titre">4 - Les équipements essentiels</h2>
+            <h2 id="equipements" class="equipements-titre">4 - Les équipements essentiels</h2>
 
             <div class="equipement-item">
-                <h3>4.1 - Les leggings</h3>
+                <h2 id="leggings">4.1 - Les leggings</h2>
                 <p>
                     Les leggings d’haltérophilie offrent un bon maintien musculaire et permettent une grande liberté de
                     mouvement.
@@ -195,7 +190,7 @@
             </div>
 
             <div class="equipement-item">
-                <h3>4.2 - Une trousse de secours</h3>
+                <h2 id="secours">4.2 - Une trousse de secours</h2>
                 <p>
                     Toujours avoir une trousse de secours à proximité est indispensable.
                     Elle doit contenir du strap, des pansements, du désinfectant, et éventuellement des poches de froid
@@ -203,8 +198,8 @@
                 </p>
             </div>
 
-            <div class="equipement-item">
-                <h3>4.3 - La magnésie</h3>
+            <div class=" equipement-item">
+                <h2 id="magnesie">4.3 - La magnésie</h2>
                 <p>
                     La magnésie permet d’absorber la transpiration des mains et améliore la prise sur la barre.
                     Elle est particulièrement utile lors des mouvements lourds ou lors de séries longues.
@@ -212,7 +207,7 @@
             </div>
 
             <div class="equipement-item">
-                <h3>4.4 - Les sangles de tirage</h3>
+                <h2 id="sangles">4.4 - Les sangles de tirage</h2>
                 <p>
                     Les sangles de tirage aident à maintenir une bonne prise sur la barre pendant les tractions lourdes.
                     Elles sont surtout utilisées pour les mouvements d’assistance comme les tirages ou les soulevés de
