@@ -16,3 +16,23 @@ document.addEventListener('DOMContentLoaded',function(){
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 }
+
+const likeButton = document . getElementById ( 'likeButton' ); 
+const likeCount = document . getElementById ( 'likeCount' ); 
+let likes = 0 ; 
+let message = "Vous aimez vraiment cet article !";
+let ajoutMessage = document.createElement("p");
+let messageDiv = document.querySelector(".messageAjouter");
+document.body.appendChild(ajoutMessage);
+
+likeButton. addEventListener ( 'click' , () => { 
+ likes++; 
+  console.log(likes);
+ afficheMessage();
+});
+function afficheMessage(){
+  if(likes === 5) {
+   ajoutMessage.innerText = message;
+    messageDiv.appendChild(ajoutMessage);
+ }
+  };
